@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
 	//fmt.Println("Variables: ")
@@ -29,8 +32,8 @@ func main() {
 	fmt.Println(c << 3) // 2^3 * 2^3 = 2^64
 	fmt.Println(c >> 3) // 2^3 / 2*3 = 2^0
 	//var name string = "John"
-	// var age = 30
-	// const isCool = true
+	var age = 30
+	const isCool = true
 
 	// Short must be declare inside function
 	//name := "Alex"
@@ -38,9 +41,10 @@ func main() {
 	// var size float32 = 2.3
 	// //email := "test@gmail.com"
 
-	// name, email := "Alex", "alex@gmail.com"
+	name, email := "Alex", "alex@gmail.com"
 
-	// fmt.Println(name, age, isCool, email)
+	fmt.Println(name, age, isCool, email)
+	fmt.Println(reflect.TypeOf(name))
 
 	// fmt.Printf("%T\n", name)
 	// fmt.Printf("%T", size)
