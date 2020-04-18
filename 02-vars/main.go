@@ -21,18 +21,22 @@ func main() {
 	// var num int32 = 42
 	// fmt.Printf("%v, %T\n", num, num)
 
-	a := 10             //1010
-	b := 3              //0011
-	fmt.Println(a & b)  // 0010
-	fmt.Println(a | b)  // 1011
-	fmt.Println(a ^ b)  // 1001
-	fmt.Println(a &^ b) //0100
+	// a := 10             //1010
+	// b := 3              //0011
+	// fmt.Println(a & b)  // 0010
+	// fmt.Println(a | b)  // 1011
+	// fmt.Println(a ^ b)  // 1001
+	// fmt.Println(a &^ b) //0100
 
-	c := 8              // 2^3
-	fmt.Println(c << 3) // 2^3 * 2^3 = 2^64
-	fmt.Println(c >> 3) // 2^3 / 2*3 = 2^0
+	// c := 8              // 2^3
+	// fmt.Println(c << 3) // 2^3 * 2^3 = 2^64
+	// fmt.Println(c >> 3) // 2^3 / 2*3 = 2^0
 	//var name string = "John"
-	var age = 30
+
+	var age int
+	fmt.Println("How old are you? ")
+	fmt.Scan(&age)
+	fmt.Printf("You age is: %d\n", age)
 	const isCool = true
 
 	// Short must be declare inside function
@@ -43,7 +47,7 @@ func main() {
 
 	name, email := "Alex", "alex@gmail.com"
 
-	fmt.Println(name, age, isCool, email)
+	fmt.Println(name, " is ", age, isCool, email)
 	fmt.Println(reflect.TypeOf(name))
 
 	// fmt.Printf("%T\n", name)
